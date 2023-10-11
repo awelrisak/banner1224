@@ -1,0 +1,222 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+        /* Apply CSS styles here */
+        * {
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+            font-family: "Open Sans", sans-serif;
+        }
+    
+     .banner {
+         position: relative;
+         width: 100%;
+         height: 100%;
+         display: flex;
+         background: yellow;
+     }
+     
+     .pic1{
+         flex-basis: 30%;
+         height: 100%;
+         position: relative;
+     }
+     
+     .pic1 img{
+         width: 100%;
+         height: 100%;
+     }
+     
+     .logo {
+         flex-basis: 20%;
+         background: white;
+         position: relative;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+     }
+     
+     .logo img {         
+         width: 80%;
+     }
+     
+     .info-container{
+         flex-basis: 50%;
+         height: 100%;
+         position: relative;
+         background: url("pic2.jpeg");
+         background-size: cover;
+     }
+     .info{
+         position: absolute:
+         width: 100%;
+         height: 100%;
+         background: #05050590;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         padding-left: 8px;
+     }
+     .small-box {
+         position: absolute;
+         height: 50%;
+         width: 30%;
+         background: red;
+         bottom: 0;
+         right: 0;
+         font-size: 7px;
+         line-height: 0.6rem;
+         color: white;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+     }
+        
+        @media (min-width: 100px) and (max-width: 199px){
+            .pic1, .info-container{
+                display: none;
+            }
+            .logo{
+                flex: 1;
+            }
+        }
+         @media (min-width: 200px) and (max-width: 359px){
+            .pic1 {
+                display: none;
+            }
+            .logo{
+                flex-basis: 30%;
+            }
+           .info-container{
+             flex-basis: 70%;
+             }
+             h5 {
+                 color: #FFF;
+                 font-weight: bold;
+                 font-size: 0.9rem;
+                 line-height: 1.025rem;
+             }
+             p {
+                 color: #EFEFEF;
+                 font-size: 0.425rem;
+                 line-height: 0.475rem;
+             }
+        }
+          @media (min-width: 360px) and (max-width: 427px){
+      
+             h5 {
+                 color: #FFF;
+                 font-weight: bold;
+                 font-size: 1.025rem;
+                 line-height: 1rem;
+             }
+             p {
+                 color: #EFEFEF;
+                 font-size: 0.46rem;
+                 line-height: 0.5rem;
+             }
+             .box-size{
+                font-size: 10px;
+             }
+        }
+        @media (min-width: 428px) and (max-width: 699px){      
+             h5 {
+                 color: #FFF;
+                 font-weight: bold;
+                 font-size: 1.28rem;
+                 line-height: 1.2rem;
+             }
+             p {
+                 color: #EFEFEF;
+                 font-size: 0.735rem;
+                 line-height: 0.675rem;
+             }
+             .box-size{
+                font-size: 12px;
+             }
+        }
+        
+        @media (min-width: 700px){
+          .info-container {
+              flex-basis: 70%;
+            }
+           .pic1{
+             flex-basis: 20%;
+           }
+            .logo{
+                flex-basis: 10%;
+            }
+            .info-container{
+                
+            }
+            .info{
+               flex-direction: row;
+               justify-content: start;
+               align-items: center;
+               gap: 16px;
+            }
+             h5 {
+                 color: #FFF;
+                 font-weight: bold;
+                 font-size: 1.3rem;
+                 line-height: 1.3rem;                 
+             }
+             p {
+                 color: #EFEFEF;
+                 font-size: 0.8rem;
+                 line-height: 0.8rem;
+             }
+             .small-box{
+                height: 100%;
+                font-size: 14px;
+                font-weight: bold;
+                line-height: 0.8rem;
+             }
+        }
+    </style>
+
+    <div class="banner">
+        <div class="pic1">
+            <img
+                src="pic1.jpeg"
+                alt="pic1"
+            />
+        </div>
+
+        <div class="logo">
+            <img
+                src="logo.png"
+                alt="logo"
+            />
+        </div>
+
+        <div class="info-container">
+            <div class="info">
+                <h5>
+                    lhr Businesshotel
+                </h5>
+                <div>
+                <p>
+                    direct an der A1
+                </p>
+                <p>
+                    Zürich - winterthur
+                </p>
+              </div>
+                <div class="small-box">
+                    <span>günstig</span>
+                    <span>sauber</span>
+                    <span>stressfrei</span>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+
+
